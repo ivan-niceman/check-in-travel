@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+.info-top {
+  background: url(../../images/top-bg.webp) center no-repeat;
+  background-size: cover;
+  min-height: 975px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-top .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.info-top__wrapper {
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 50px 130px;
+}
+
+.info-top__info {
+  padding-left: 120px;
+  color: #fff;
+  width: 100%;
+}
+
+@media(max-width: 1200px) {
+  .info-top__wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .info-top__info {
+    padding-left: 0;
+  }
+}
+
+
+.info-top__title {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.info-top__description {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+@media(max-width: 500px) {
+  .info-top__wrapper {
+    padding-top: 220px;
+  }
+
+  .info-top__title {
+    font-size: 18px;
+  }
+
+  .info-top__description {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
+
+.info-top__text {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 50px;
+  font-family: "Marck Script", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 34px;
+  max-width: 550px;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+@media(max-width: 1200px) {
+  .info-top__text {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    text-align: center;
+  }
+}
+
+@media(max-width: 500px) {
+  .info-top__text {
+    font-size: 18px;
+  }
+}
+
+.info-top__text span {
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+.info-top__text span.fade-in {
+  opacity: 1;
+}

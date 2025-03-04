@@ -1,0 +1,33 @@
+.social {
+  position: fixed;
+  left: 20px;
+  top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+}
+
+@media(max-width: 425px) {
+  .social {
+    left: 1px;
+  }
+
+  .social img {
+    width: 35px;
+    height: 35px;
+  }
+}

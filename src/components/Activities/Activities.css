@@ -1,0 +1,132 @@
+@media(max-width: 425px) {
+  .activities.container {
+    padding: 0;
+  }
+}
+
+.activities__wrapper {
+  margin: 50px 0;
+}
+
+.activities__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px 100px;
+  background-color: #F8E36B;
+  padding: 10px 35px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.activities__header span {
+  color: var(--red-color);
+}
+
+.activities__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 525px;
+  grid-template-columns: 3fr 2fr;
+  gap: 30px;
+  padding: 35px;
+  background-color: #CCDCD6;
+}
+
+@media (max-width: 1000px) {
+  .activities__content {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  .activities__content {
+    padding: 15px;
+  }
+}
+
+.activities__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.activities__link {
+  display: block;
+  padding: 15px;
+  max-width: 200px;
+  width: 100%;
+  color: #fff;
+  background-color: var(--red-color);
+  text-align: center;
+  margin-top: 20px;
+  -webkit-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.activities__link:hover {
+  background-color: var(--orange-color);
+}
+
+.activities__link:active {
+  background-color: var(--blue-color);
+}
+
+.activities__photos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  height: 100%;
+  gap: 30px;
+  margin-top: 35px;
+}
+
+@media(max-width: 425px) {
+  .activities__text {
+    font-size: 14px;
+  }
+
+  .activities__photos {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.activities__photos img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.activities__photos .activities__small-photo {
+  height: auto;
+}
+
+.activities__img {
+  max-width: 525px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .activities__img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+}
