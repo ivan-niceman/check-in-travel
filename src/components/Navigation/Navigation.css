@@ -1,4 +1,4 @@
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
   .nav {
     display: none;
   }
@@ -40,4 +40,10 @@
 
 .nav__link:hover::after {
   width: 100%;
+}
+
+@media(max-width: 1024px) {
+  .nav__link {
+    font-size: 14px;
+  }
 }

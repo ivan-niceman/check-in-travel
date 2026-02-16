@@ -12,7 +12,7 @@
   padding: 0;
 }
 
-@media(min-width: 900px) {
+@media(min-width: 1000px) {
 
   .burger-button,
   .mobile-nav {

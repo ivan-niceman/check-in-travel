@@ -1,0 +1,62 @@
+.agreement__title,
+.agreement__subtitle {
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.agreement__title {
+  font-size: 24px;
+}
+
+.agreement__subtitle {
+  font-size: 18px;
+}
+
+.agreement__subtitle-left {
+  text-align: left;
+}
+
+.agreement__text {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+@media(max-width: 500px) {
+  .agreement__title {
+    font-size: 20px;
+  }
+
+  .agreement__subtitle {
+    font-size: 16px;
+  }
+
+  .agreement__text {
+    font-size: 14px;
+  }
+}
+
+.agreement__download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  width: 100%;
+  min-height: 50px;
+  margin: 50px auto;
+  background-color: var(--red-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.agreement__download-btn:hover {
+  background-color: var(--orange-color);
+}
+
+.agreement__download-btn:active {
+  background-color: var(--blue-color);
+}

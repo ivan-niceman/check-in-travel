@@ -20,6 +20,10 @@ const nav = [
     name: 'Блог эксперта',
   },
   {
+    link: '/agreement',
+    name: 'Договор',
+  },
+  {
     link: '/#partners-form',
     name: 'Контакты',
   },

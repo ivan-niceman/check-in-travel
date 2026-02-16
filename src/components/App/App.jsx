@@ -10,6 +10,7 @@ import Feedback from '../Feedback/Feedback';
 import Partners from '../Partners/Partners';
 import Blog from '../Blog/Blog';
 import Activities from '../Activities/Activities';
+import Agreement from '../Agreement/Agreement';
 import Privacy from '../Privacy/Privacy';
 import Social from '../Social/Social';
 import FormPopup from '../FormPopup/FormPopup';
@@ -62,6 +63,7 @@ export default function App() {
           />
           <Route path="/blog" element={<Blog />} />
           <Route path="/activities" element={<Activities />} />
+          <Route path="/agreement" element={<Agreement  />} />
           <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </main>
